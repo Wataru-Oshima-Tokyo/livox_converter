@@ -1,7 +1,3 @@
-Here's a README template for your ROS node that subscribes to `livox_ros_driver/CustomMsg`, converts it, and publishes to `livox_ros_driver2/CustomMsg`, using OpenMP for parallel processing.
-
----
-
 # Livox Message Converter Node
 
 This ROS package provides a node that subscribes to LiDAR data published by `livox_ros_driver` on the `/livox/lidar` topic, converts the incoming messages from `livox_ros_driver/CustomMsg` format to `livox_ros_driver2/CustomMsg` format, and publishes the converted messages to `/livox/lidar_custom`. It utilizes OpenMP for efficient parallel processing, speeding up the conversion of large numbers of data points within each message.
@@ -75,4 +71,3 @@ This node does not use ROS parameters for configuration.
 
 Contributions to improve this package are welcome. Please submit pull requests or report issues through the project's GitHub repository.
 
----
